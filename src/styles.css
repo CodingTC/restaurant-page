@@ -1,0 +1,183 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root
+{
+    font-size: 62.5%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* remove list styles only when role="list" (must specify role="list" for 
+safari accessibility) */
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/* end of reset */
+
+:root
+{
+    --main-color: #1111ff;
+    --main-color-dark: #0a0a7a;
+    --pure-white: #ffffff;
+    --text-blue: #60a5fa;
+    --text-gray: #d1d5db;
+    --main-color-sophisticated: #0000B0;
+    --main-color-dark-sophisticated: #030330; 
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background: linear-gradient(135deg, #000000 0%, var(--main-color-sophisticated) 50%, var(--main-color-dark-sophisticated) 100%); /* my main background gradient */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+header 
+{
+    backdrop-filter: blur(1em); /* frosted glass effect */
+    border-bottom: 1px solid var(--text-blue);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    flex-wrap: wrap;
+}
+
+.logo-div
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-blue);
+    flex: 1;
+}
+
+.logo
+{
+    padding: 0em 1em;
+}
+
+
+.nav-buttons
+{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.spacer
+{
+    flex: 1;
+}
+
+button
+{
+    font-size: 2rem;
+    background-color: transparent;
+    color: var(--text-gray);
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button:hover
+{
+    color: var(--text-blue);
+}
+
+#content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    flex: 1;
+}
+
+#content h2
+{
+    font-size: 4rem;
+    color: var(--pure-white);
+}
+
+#content img
+{
+    height: auto;
+    width: 30em; 
+    margin: 2em 0;
+}
+
+#content p
+{
+    font-size: 1.6rem;
+    color: var(--text-gray);
+    max-width: 50em;
+    text-align: center;
+}
+
+footer
+{
+    backdrop-filter: blur(1em);
+    border-top: 1px solid var(--text-blue);
+    width: 100%;
+}
+
+.copyright-text
+{
+    font-size: 2rem;
+    color: var(--text-blue); 
+    text-align: center;
+    padding: .5em 0;
+}
