@@ -74,6 +74,7 @@ body
     flex-direction: column;
     background: linear-gradient(135deg, #000000 0%, var(--main-color-sophisticated) 50%, var(--main-color-dark-sophisticated) 100%); /* my main background gradient */
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    align-items: center;
 }
 
 header 
@@ -196,4 +197,24 @@ footer
 {
     color: var(--pure-white);
     font-size: 4rem;
+}
+
+
+.card
+{
+    margin-top: 4em; 
+    border: 1px solid var(--text-blue);
+    padding: 5em;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1.4em;
+    padding: 1.75rem 2rem;
+    box-shadow: 0 0 0 0.1em rgba(23, 48, 118, 0.6),
+    0 2em 4em rgba(0, 0, 0, 0.45);
+}
+
+.card p 
+{
+    font-size: 2rem;
+    color: var(--text-gray);
+    max-width: 55ch;
 }
