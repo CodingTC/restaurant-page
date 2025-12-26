@@ -181,3 +181,19 @@ footer
     text-align: center;
     padding: .5em 0;
 }
+
+
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    flex: 1;
+}
+
+.about-h1
+{
+    color: var(--pure-white);
+    font-size: 4rem;
+}
