@@ -179,6 +179,7 @@ export function loadMenu()
     menuDiv.appendChild(onionRingsDiv);
 
     menuDiv.appendChild(mainDishes);
+    menuDiv.appendChild(cheeseBurgerDiv);
     menuDiv.appendChild(doubleSmashBurgerDiv);
     menuDiv.appendChild(pepperoniPizzaDiv);
     menuDiv.appendChild(bbqChickenPizzaDiv);
