@@ -74,7 +74,6 @@ body
     flex-direction: column;
     background: linear-gradient(135deg, #000000 0%, var(--main-color-sophisticated) 50%, var(--main-color-dark-sophisticated) 100%); /* my main background gradient */
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    align-items: center;
 }
 
 header 
@@ -160,13 +159,6 @@ button:hover
     margin: 2em 0;
 }
 
-#content p
-{
-    font-size: 1.6rem;
-    color: var(--text-gray);
-    max-width: 50em;
-    text-align: center;
-}
 
 footer
 {
@@ -199,10 +191,17 @@ footer
     font-size: 4rem;
 }
 
+.menu-h3
+{
+    font-size: 3.5rem;
+    color: var(--pure-white);
+}
+
 
 .card
 {
-    margin-top: 4em; 
+    width: 75em;
+    margin-top: 6.5em; 
     border: 1px solid var(--text-blue);
     padding: 5em;
     background: rgba(255, 255, 255, 0.04);
@@ -210,11 +209,37 @@ footer
     padding: 1.75rem 2rem;
     box-shadow: 0 0 0 0.1em rgba(23, 48, 118, 0.6),
     0 2em 4em rgba(0, 0, 0, 0.45);
+    text-align: left;
 }
 
+.card img
+{
+    align-self: flex-end;
+}
 .card p 
 {
     font-size: 2rem;
     color: var(--text-gray);
+    max-width: 53ch;
+    text-align: left;
+}
+
+.card h3
+{
+    font-size: 2.5rem;
+    color: var(--text-blue);
     max-width: 55ch;
+}
+
+.card h4
+{
+    font-size: 2.2rem;
+    color: var(--text-blue);
+    max-width: 55ch;
+}
+
+.card-flex
+{
+    display: flex;
+    flex-direction: column;
 }
